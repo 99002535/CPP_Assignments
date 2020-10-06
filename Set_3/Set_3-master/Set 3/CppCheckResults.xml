@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.1" />
+    <errors>
+        <error id="syntaxError" severity="error" msg="Code &apos;classAccountBase{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classAccountBase{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="account.h" line="6" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classAccountBase{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classAccountBase{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="creditaccount.h" file="account.h" line="6" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classCustomerBase{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classCustomerBase{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="customer.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="employee.h" line="5" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="engineer.h" file="employee.h" line="5" column="1" />
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;AccountBase::m_balance&apos; is not initialized in the constructor." verbose="Member variable &apos;AccountBase::m_balance&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="71" column="14" />
+            <symbol>AccountBase::m_balance</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CustomerBase::m_type&apos; is not initialized in the constructor." verbose="Member variable &apos;CustomerBase::m_type&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="134" column="15" />
+            <symbol>CustomerBase::m_type</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CustomerBase::m_balance&apos; is not initialized in the constructor." verbose="Member variable &apos;CustomerBase::m_balance&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="145" column="15" />
+            <symbol>CustomerBase::m_balance</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CustomerBase::m_type&apos; is not initialized in the constructor." verbose="Member variable &apos;CustomerBase::m_type&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="145" column="15" />
+            <symbol>CustomerBase::m_type</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PostpaidCustomer::m_billDate&apos; is not initialized in the constructor." verbose="Member variable &apos;PostpaidCustomer::m_billDate&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="139" column="19" />
+            <symbol>PostpaidCustomer::m_billDate</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;PostpaidCustomer::m_billDate&apos; is not initialized in the constructor." verbose="Member variable &apos;PostpaidCustomer::m_billDate&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="149" column="19" />
+            <symbol>PostpaidCustomer::m_billDate</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="engineer.h" line="14" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="employee.h" line="19" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="manager.h" line="16" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="employee.h" line="19" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="trainee.h" line="15" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="employee.h" line="19" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;debit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;debit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="creditaccount.h" line="12" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="account.h" line="18" column="18" info="Virtual function in base class" />
+            <symbol>debit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="creditaccount.h" line="13" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="account.h" line="19" column="18" info="Virtual function in base class" />
+            <symbol>credit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="creditaccount.h" line="14" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="account.h" line="20" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;debit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;debit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="savingsaccount.h" line="12" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="account.h" line="18" column="18" info="Virtual function in base class" />
+            <symbol>debit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="savingsaccount.h" line="13" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="account.h" line="19" column="18" info="Virtual function in base class" />
+            <symbol>credit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="savingsaccount.h" line="14" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="account.h" line="20" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="postpaid.h" line="16" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="23" column="18" info="Virtual function in base class" />
+            <symbol>credit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;makeCall&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;makeCall&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="postpaid.h" line="17" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="24" column="18" info="Virtual function in base class" />
+            <symbol>makeCall</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="postpaid.h" line="18" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="25" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;getBalance&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;getBalance&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="postpaid.h" line="19" column="12" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="26" column="20" info="Virtual function in base class" />
+            <symbol>getBalance</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;credit&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="prepaid.h" line="15" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="23" column="18" info="Virtual function in base class" />
+            <symbol>credit</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;makeCall&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;makeCall&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="prepaid.h" line="16" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="24" column="18" info="Virtual function in base class" />
+            <symbol>makeCall</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;display&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="prepaid.h" line="17" column="10" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="25" column="18" info="Virtual function in base class" />
+            <symbol>display</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;getBalance&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;getBalance&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="main.cpp" file="prepaid.h" line="18" column="12" info="Function in derived class" />
+            <location file0="main.cpp" file="customer.h" line="26" column="20" info="Virtual function in base class" />
+            <symbol>getBalance</symbol>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference" verbose="Null pointer dereference" cwe="476">
+            <location file="main.cpp" line="55" column="5" info="Null pointer dereference" />
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference" verbose="Null pointer dereference" cwe="476">
+            <location file="main.cpp" line="130" column="5" info="Null pointer dereference" />
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_empid&apos; should be passed by const reference." verbose="Parameter &apos;m_empid&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="23" column="22" />
+            <symbol>m_empid</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_name&apos; should be passed by const reference." verbose="Parameter &apos;m_name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="23" column="38" />
+            <symbol>m_name</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_empid&apos; should be passed by const reference." verbose="Parameter &apos;m_empid&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="33" column="22" />
+            <symbol>m_empid</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_name&apos; should be passed by const reference." verbose="Parameter &apos;m_name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="33" column="38" />
+            <symbol>m_name</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_empid&apos; should be passed by const reference." verbose="Parameter &apos;m_empid&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="39" column="21" />
+            <symbol>m_empid</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_name&apos; should be passed by const reference." verbose="Parameter &apos;m_name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="39" column="37" />
+            <symbol>m_name</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_empid&apos; should be passed by const reference." verbose="Parameter &apos;m_empid&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="45" column="21" />
+            <symbol>m_empid</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_name&apos; should be passed by const reference." verbose="Parameter &apos;m_name&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="45" column="36" />
+            <symbol>m_name</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;m_track&apos; should be passed by const reference." verbose="Parameter &apos;m_track&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="45" column="67" />
+            <symbol>m_track</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="59" column="33" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="59" column="42" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="64" column="37" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="64" column="47" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="67" column="39" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="67" column="49" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="71" column="33" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="71" column="42" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="76" column="37" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="76" column="47" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="80" column="39" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="80" column="49" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="134" column="35" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="134" column="44" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="134" column="53" />
+            <symbol>c</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="139" column="43" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="139" column="53" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="139" column="63" />
+            <symbol>c</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="142" column="41" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="142" column="51" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="142" column="61" />
+            <symbol>c</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="145" column="35" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="145" column="45" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="145" column="55" />
+            <symbol>c</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="149" column="43" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="149" column="53" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="149" column="63" />
+            <symbol>c</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="152" column="41" />
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="152" column="51" />
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;c&apos; should be passed by const reference." verbose="Parameter &apos;c&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file="main.cpp" line="152" column="61" />
+            <symbol>c</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="manager.h" file="employee.h" line="5" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classCustomerBase{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classCustomerBase{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="postpaid.h" file="customer.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classCustomerBase{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classCustomerBase{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="prepaid.h" file="customer.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classAccountBase{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classAccountBase{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="savingsaccount.h" file="account.h" line="6" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file0="trainee.h" file="employee.h" line="5" column="1" />
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Employee&apos; is never used." verbose="The function &apos;Employee&apos; is never used." cwe="561">
+            <location file="main.cpp" line="23" column="0" />
+            <symbol>Employee</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Engineer&apos; is never used." verbose="The function &apos;Engineer&apos; is never used." cwe="561">
+            <location file="main.cpp" line="33" column="0" />
+            <symbol>Engineer</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Manager&apos; is never used." verbose="The function &apos;Manager&apos; is never used." cwe="561">
+            <location file="main.cpp" line="39" column="0" />
+            <symbol>Manager</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Trainee&apos; is never used." verbose="The function &apos;Trainee&apos; is never used." cwe="561">
+            <location file="main.cpp" line="45" column="0" />
+            <symbol>Trainee</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;appraisal&apos; is never used." verbose="The function &apos;appraisal&apos; is never used." cwe="561">
+            <location file="main.cpp" line="19" column="0" />
+            <symbol>appraisal</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;credit&apos; is never used." verbose="The function &apos;credit&apos; is never used." cwe="561">
+            <location file="main.cpp" line="101" column="0" />
+            <symbol>credit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;debit&apos; is never used." verbose="The function &apos;debit&apos; is never used." cwe="561">
+            <location file="main.cpp" line="89" column="0" />
+            <symbol>debit</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;payroll&apos; is never used." verbose="The function &apos;payroll&apos; is never used." cwe="561">
+            <location file="main.cpp" line="15" column="0" />
+            <symbol>payroll</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>

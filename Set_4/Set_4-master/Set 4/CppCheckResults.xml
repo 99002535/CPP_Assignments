@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.1" />
+    <errors>
+        <error id="syntaxError" severity="error" msg="Code &apos;template&lt;...&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;template&lt;...&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="array.h" line="4" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="complex.h" line="3" column="1" />
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyArray::m_arr&apos; is not initialized in the constructor." verbose="Member variable &apos;MyArray::m_arr&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="40" column="13" />
+            <symbol>MyArray::m_arr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyStack &lt; int &gt;::m_arr&apos; is not initialized in the constructor." verbose="Member variable &apos;MyStack &lt; int &gt;::m_arr&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="122" column="13" />
+            <symbol>MyStack &lt; int &gt;::m_arr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyStack &lt; int &gt;::m_maxlen&apos; is not initialized in the constructor." verbose="Member variable &apos;MyStack &lt; int &gt;::m_maxlen&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="122" column="13" />
+            <symbol>MyStack &lt; int &gt;::m_maxlen</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyStack &lt; int &gt;::m_arr&apos; is not initialized in the constructor." verbose="Member variable &apos;MyStack &lt; int &gt;::m_arr&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="124" column="13" />
+            <symbol>MyStack &lt; int &gt;::m_arr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyStack &lt; int &gt;::m_top&apos; is not initialized in the constructor." verbose="Member variable &apos;MyStack &lt; int &gt;::m_top&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="124" column="13" />
+            <symbol>MyStack &lt; int &gt;::m_top</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyStack &lt; int &gt;::m_arr&apos; is not initialized in the constructor." verbose="Member variable &apos;MyStack &lt; int &gt;::m_arr&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="126" column="13" />
+            <symbol>MyStack &lt; int &gt;::m_arr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Complex &lt; int &gt;::m_image&apos; is not initialized in the constructor." verbose="Member variable &apos;Complex &lt; int &gt;::m_image&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="12" column="13" />
+            <symbol>Complex &lt; int &gt;::m_image</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Complex &lt; float &gt;::m_image&apos; is not initialized in the constructor." verbose="Member variable &apos;Complex &lt; float &gt;::m_image&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="12" column="13" />
+            <symbol>Complex &lt; float &gt;::m_image</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MyArray&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MyArray&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="main.cpp" file="array.h" line="10" column="5" />
+            <symbol>MyArray</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MyStack &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MyStack &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="main.cpp" file="stack.h" line="14" column="5" />
+            <symbol>MyStack &lt; int &gt;</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;j&apos; is assigned a value that is never used." verbose="Variable &apos;j&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="217" column="6" />
+            <symbol>j</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;template&lt;...&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;template&lt;...&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="point.h" line="12" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;template&lt;...&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;template&lt;...&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="stack.h" line="7" column="1" />
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;append&apos; is never used." verbose="The function &apos;append&apos; is never used." cwe="561">
+            <location file="main.cpp" line="44" column="0" />
+            <symbol>append</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;at&apos; is never used." verbose="The function &apos;at&apos; is never used." cwe="561">
+            <location file="main.cpp" line="47" column="0" />
+            <symbol>at</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;search&apos; is never used." verbose="The function &apos;search&apos; is never used." cwe="561">
+            <location file="main.cpp" line="51" column="0" />
+            <symbol>search</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sum&apos; is never used." verbose="The function &apos;sum&apos; is never used." cwe="561">
+            <location file="main.cpp" line="59" column="0" />
+            <symbol>sum</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>

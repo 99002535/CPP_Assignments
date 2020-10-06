@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.1" />
+    <errors>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;using namespace std&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="Complex.h" line="1" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classCurrency{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classCurrency{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="Currency.h" line="1" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classDistance{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classDistance{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="Distance.h" line="1" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classFraction{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classFraction{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="Fraction.h" line="2" column="1" />
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;classMyTime{&apos; is invalid C code. Use --std or --language to configure the language." verbose="Code &apos;classMyTime{&apos; is invalid C code. Use --std or --language to configure the language.">
+            <location file="MyTime.h" line="1" column="1" />
+        </error>
+        <error id="uselessAssignmentArg" severity="style" msg="Assignment of function parameter has no effect outside the function." verbose="Assignment of function parameter has no effect outside the function." cwe="398">
+            <location file="main.cpp" line="104" column="9" />
+        </error>
+        <error id="uselessAssignmentArg" severity="style" msg="Assignment of function parameter has no effect outside the function." verbose="Assignment of function parameter has no effect outside the function." cwe="398">
+            <location file="main.cpp" line="114" column="9" />
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Currency::m_paise&apos; is not initialized in the constructor." verbose="Member variable &apos;Currency::m_paise&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="129" column="11" />
+            <symbol>Currency::m_paise</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Fraction::m_numerator&apos; is not initialized in the constructor." verbose="Member variable &apos;Fraction::m_numerator&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="194" column="11" />
+            <symbol>Fraction::m_numerator</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Fraction::m_denominator&apos; is not initialized in the constructor." verbose="Member variable &apos;Fraction::m_denominator&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="194" column="11" />
+            <symbol>Fraction::m_denominator</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MyTime::m_seconds&apos; is not initialized in the constructor." verbose="Member variable &apos;MyTime::m_seconds&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="278" column="9" />
+            <symbol>MyTime::m_seconds</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Complex::m_imag&apos; is not initialized in the constructor." verbose="Member variable &apos;Complex::m_imag&apos; is not initialized in the constructor." cwe="398">
+            <location file="main.cpp" line="411" column="10" />
+            <symbol>Complex::m_imag</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Currency&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Currency&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="main.cpp" file="Currency.h" line="6" column="5" />
+            <symbol>Currency</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Fraction&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Fraction&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="main.cpp" file="Fraction.h" line="8" column="5" />
+            <symbol>Fraction</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Complex&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Complex&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="main.cpp" file="Complex.h" line="10" column="5" />
+            <symbol>Complex</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;temp&apos; can be reduced." verbose="The scope of the variable &apos;temp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="main.cpp" line="53" column="9" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;temp&apos; can be reduced." verbose="The scope of the variable &apos;temp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="main.cpp" line="67" column="9" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;temp&apos; can be reduced." verbose="The scope of the variable &apos;temp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="main.cpp" line="101" column="9" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;temp&apos; can be reduced." verbose="The scope of the variable &apos;temp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="main.cpp" line="111" column="9" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="53" column="13" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp1&apos; is assigned a value that is never used." verbose="Variable &apos;temp1&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="53" column="21" />
+            <symbol>temp1</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;tinch&apos; is assigned a value that is never used." verbose="Variable &apos;tinch&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="61" column="14" />
+            <symbol>tinch</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="67" column="13" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="78" column="13" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="92" column="13" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="101" column="13" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;inch&apos; is assigned a value that is never used." verbose="Variable &apos;inch&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="104" column="13" />
+            <symbol>inch</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="111" column="13" />
+            <symbol>temp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;inch&apos; is assigned a value that is never used." verbose="Variable &apos;inch&apos; is assigned a value that is never used." cwe="563">
+            <location file="main.cpp" line="114" column="13" />
+            <symbol>inch</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;isSimplest&apos; is never used." verbose="The function &apos;isSimplest&apos; is never used." cwe="561">
+            <location file="main.cpp" line="263" column="0" />
+            <symbol>isSimplest</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;simplify&apos; is never used." verbose="The function &apos;simplify&apos; is never used." cwe="561">
+            <location file="main.cpp" line="257" column="0" />
+            <symbol>simplify</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>

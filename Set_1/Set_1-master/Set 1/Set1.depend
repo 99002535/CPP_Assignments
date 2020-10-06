@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1600246027 source:c:\users\training\suraj\c++\trial progs\assignments\set1\main.cpp
+	<iostream>
+
+1600509613 source:c:\users\training\suraj\c++\assignments\set1\main.cpp
+	<iostream>
+	"account.h"
+	"color.h"
+	"Image.h"
+	"point.h"
+	"Customer.h"
+	"Box.h"
+	"IPAddress.h"
+	<math.h>
+
+1600334391 c:\users\training\suraj\c++\assignments\set1\account.h
+	<string>
+
+1600336031 c:\users\training\suraj\c++\assignments\set1\color.h
+
+1600338699 c:\users\training\suraj\c++\assignments\set1\image.h
+	<string>
+
+1600340310 c:\users\training\suraj\c++\assignments\set1\point.h
+	<iostream>
+
+1600342158 c:\users\training\suraj\c++\assignments\set1\customer.h
+
+1600342347 c:\users\training\suraj\c++\assignments\set1\box.h
+
+1600418510 c:\users\training\suraj\c++\assignments\set1\ipaddress.h
+	<iostream>
+	<stdio.h>
+
+1600593120 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\main.cpp
+	<iostream>
+	"account.h"
+	"color.h"
+	"Image.h"
+	"point.h"
+	"Customer.h"
+	"Box.h"
+	"IPAddress.h"
+	<math.h>
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\account.h
+	<string>
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\color.h
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\image.h
+	<string>
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\point.h
+	<iostream>
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\customer.h
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\box.h
+
+1600593120 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set1\ipaddress.h
+	<iostream>
+	<stdio.h>
+

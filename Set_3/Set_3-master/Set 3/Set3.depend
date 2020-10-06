@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1600618984 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\main.cpp
+	<iostream>
+	"employee.h"
+	"engineer.h"
+	"manager.h"
+	"trainee.h"
+	"Account.h"
+	"CreditAccount.h"
+	"SavingsAccount.h"
+	"customer.h"
+	"postpaid.h"
+	"prepaid.h"
+
+1600619001 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\employee.h
+	<iostream>
+	"string.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\engineer.h
+	<iostream>
+	"string.h"
+	"employee.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\manager.h
+	<iostream>
+	"string.h"
+	"employee.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\trainee.h
+	<iostream>
+	"string.h"
+	"employee.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\account.h
+	<string>
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\creditaccount.h
+	<string>
+	"account.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\savingsaccount.h
+	<string>
+	"account.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\customer.h
+	<string>
+	<cstdint>
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\postpaid.h
+	<string>
+	<cstdint>
+	"customer.h"
+
+1600619033 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set3\set3\set3\prepaid.h
+	<string>
+	<cstdint>
+	"customer.h"
+

@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1600433466 source:c:\users\training\suraj\assignments-set-1-2\source_trail\set2\set2\main.cpp
+	<iostream>
+	"Distance.h"
+
+1600403101 source:c:\users\training\suraj\assignments-set-1-2\source_trail\set2\set2\sum.cpp
+
+1600433470 c:\users\training\suraj\assignments-set-1-2\source_trail\set2\set2\distance.h
+
+1600624971 source:d:\suraj\lnt\onboarding-genesis\assignments\assignments-set-1-2\source_trail\set2\set2\main.cpp
+	<iostream>
+	"Distance.h"
+	"Currency.h"
+	"Fraction.h"
+	"MyTime.h"
+	"Complex.h"
+
+1600624866 d:\suraj\lnt\onboarding-genesis\assignments\assignments-set-1-2\source_trail\set2\set2\distance.h
+
+1600624866 d:\suraj\lnt\onboarding-genesis\assignments\assignments-set-1-2\source_trail\set2\set2\currency.h
+
+1600624866 d:\suraj\lnt\onboarding-genesis\assignments\assignments-set-1-2\source_trail\set2\set2\fraction.h
+	<string>
+
+1600624866 d:\suraj\lnt\onboarding-genesis\assignments\assignments-set-1-2\source_trail\set2\set2\mytime.h
+
+1600624846 d:\suraj\lnt\onboarding-genesis\assignments\assignments-set-1-2\source_trail\set2\set2\complex.h
+
+1600687472 source:c:\users\training\suraj\assignments\set_2\set 2\main.cpp
+	<iostream>
+	"Distance.h"
+	"Currency.h"
+	"Fraction.h"
+	"MyTime.h"
+	"Complex.h"
+
+1600686838 c:\users\training\suraj\assignments\set_2\set 2\distance.h
+
+1600666328 c:\users\training\suraj\assignments\set_2\set 2\currency.h
+
+1600666328 c:\users\training\suraj\assignments\set_2\set 2\fraction.h
+	<string>
+
+1600666328 c:\users\training\suraj\assignments\set_2\set 2\mytime.h
+
+1600666328 c:\users\training\suraj\assignments\set_2\set 2\complex.h
+
+1600686413 source:c:\users\training\suraj\assignments\set_2\set 2\unittest.cc
+	"Distance.h"
+	<gtest/gtest.h>
+
+1600715536 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\main.cpp
+	<iostream>
+	"Distance.h"
+	"Currency.h"
+	"Fraction.h"
+	"MyTime.h"
+	"Complex.h"
+
+1600706731 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\distance.h
+
+1600706731 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\currency.h
+
+1600715536 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\fraction.h
+	<string>
+
+1600706731 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\mytime.h
+
+1600706731 d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\complex.h
+
+1600715632 source:d:\suraj\lnt\onboarding-genesis\assignments\c++\assignments\set2\set2\unittest.cc
+	"Distance.h"
+	"Currency.h"
+	"Fraction.h"
+	<gtest/gtest.h>
+
